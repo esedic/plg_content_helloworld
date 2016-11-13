@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin"
+		   group="content"
+		   version="3.0"
+		   method="upgrade">
+	<author>Elvis Sedic</author>
+	<authorEmail>elvis@spletodrom.com</authorEmail>
+	<authorUrl>www.spletodrom.com</authorUrl>
+	<copyright>Copyright (C) 2016 Elvis Sedic. All rights reserved.</copyright>
+	<creationDate>10/13/2016</creationDate>
+	<description>PLG_CONTENT_HELLOWORLD_XML_DESCRIPTION</description>
+	<license>GNU General Public License, version 2 or later; see LICENSE.txt</license>
+	<name>PLG_CONTENT_HELLOWORLD</name>
+	<version>1.0.0</version>
+	<files>
+		<folder>assets</folder>
+		<folder>forms</folder>
+		<folder>language</folder>
+		<filename>index.html</filename>
+		<filename plugin="helloworld">helloworld.php</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic"
+					  addfieldpath="/plugins/content/helloworld/forms/fields">
+				<!-- Your fields here -->
+			</fieldset>
+		</fields>
+	</config>
+</extension>
